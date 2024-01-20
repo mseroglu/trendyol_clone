@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRENDYOL CLONE</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <Font awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <img src="https://cdn.dsmcdn.com/web/production/ty-cumhuriyet-100-logo.svg" alt="img">
+        <div class="input-area">
+            <input type="text" class="searching" placeholder="Aradığınız ürün, kategori veya markayı yazınız">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-user"><span> Hesabım</span></i>
+            <i class="fa-regular fa-heart"><span> Favoriler</span></i>
+            <i class="fa-solid fa-cart-shopping"><span> Sepetim</span></i>
+        </div>
+    </header>
+
+    <div class="categories">
+        <ul>
+            <li>Kadın</li>
+            <li>Erkek</li>
+            <li>Anne & Çocuk</li>
+            <li>Ev & Yaşam</li>
+            <li>Süpermarket</li>
+            <li>Kozmetik</li>
+            <li>ayakkabı & çanta</li>
+            <li>elektronik</li>
+            <li>spor & outdoor</li>
+            <li>çok satanlar <span class="badge rounded-pill text-bg-danger">Yeni</span></li>
+            <li>flaş ürünler <span class="badge rounded-pill text-bg-danger">Yeni</span></li>
+        </ul>
+    </div>
+    <hr>
+
+    <section class="brands">
+        <div>
+            <a href="www.google.com">
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/2/14/En_Cok_Satanlar_202302142041.png"
+                alt="img">
+            <p>Sen de al!</p>
+            </a>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/2/14/Senin_Icin_Sectik_202302142041.png"
+                alt="img">
+            <p>Sana özel</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/mnresize/200/200/marketing/datascience/automation/2023/10/27/Gazze_Web_Circlebanner_202310271210.png"
+                alt="img">
+            <p>Dijital<br>Destek<br>Kartları</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/7/26/Widget_202307261451.png"
+                alt="img">
+            <p>Kredi Kartı</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/7/20/Widget_202307201111.png"
+                alt="img">
+            <p>Kurumsal</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/8/22/Kredilercircle_202308221603.png"
+                alt="img">
+            <p>Krediler</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/26/Apple_202301262111.jpg"
+                alt="img">
+            <p>apple</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/27/Philips_202301271558.jpg"
+                alt="img">
+            <p>philips</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/3/31/Topstory_202303311553.jpg"
+                alt="img">
+            <p>pull & bear</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/28/Xiaomi_202301280236.jpg"
+                alt="img">
+            <p>xiaomi</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/27/Samsung_202301271715.jpg"
+                alt="img">
+            <p>samsung</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/2/13/Karaca_202302131917.jpg"
+                alt="img">
+            <p>karaca</p>
+        </div>
+        <div>
+            <img src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/27/Defacto_202301270049.jpg"
+                alt="img">
+            <p>defacto</p>
+        </div>
+
+    </section>
+
+    <section class="titles">
+        <img src="https://cdn.dsmcdn.com/mnresize/500/500/marketing/datascience/automation/2023/4/18/Sepet_202304181225.png"
+            alt="">
+        <img src="https://cdn.dsmcdn.com/mnresize/500/500/marketing/datascience/automation/2023/4/18/Onecikan_202304181225.png"
+            alt="">
+        <img src="https://cdn.dsmcdn.com/mnresize/500/500/marketing/datascience/automation/2023/4/18/Flash_202304181225.png"
+            alt="">
+    </section>
+
+    <section class="container-store">
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1139/pimWidgetApi/mobile_20240119120630_2476591ElektronikMobile202401191401.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1139/pimWidgetApi/mobile_20240118165019_2372902KadinMobile202401171101.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1137/pimWidgetApi/mobile_20240119111103_356854AyakkabiCantaMobile202401191401.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1138/pimWidgetApi/mobile_20240117211247_mobile202310050605582339527KadinMobile202310041802.jpg"
+                    alt="">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1118/pimWidgetApi/mobile_20240102100811_2359296KadinMobile202312291801.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1137/pimWidgetApi/mobile_20240119072058_mobile20231205140214mobile2023.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1139/pimWidgetApi/mobile_20240119120718_2476451ElektronikMobile202401191401.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1119/pimWidgetApi/mobile_20240104073144_2309123KadinMobile202401031602.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/marketing/datascience/automation/2024/1/3/813449B4D7A94581B559594A3D78679D_202401031911.gif"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÇOK SATAN ÜRÜNLER -->
+    <section class="container-cok-satanlar">
+        <h3>Çok Satan Ürünler</h3>
+        <div class="cards">
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty952/product/media/images/20230616/10/386098658/581243875/1/1_org.jpg">
+                <p><strong>Strawberry</strong> Pamuklu Düğmeli Pijama Takımı</p>
+                <h6>182,98 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div class="en-cok-satan">
+                        <img src="https://cdn.dsmcdn.com//marketing/datascience/automation/2020/12/9/EnCokSatan_202012091129.png" style="height: 60px; width: 60px;">
+                    </div>
+                </div>                
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty872/product/media/images/20230508/6/342567445/400212852/1/1_org.jpg">
+                <p><strong>Meguca Socks</strong> Kadın Karışık Extra Soft Renkli Koton Patik Çorap Seti 8 Çift</p>
+                <h6>63,55 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="en-cok-satan">
+                        <img src="https://cdn.dsmcdn.com//marketing/datascience/automation/2020/12/9/EnCokSatan_202012091129.png" style="height: 60px; width: 60px;">
+                    </div>
+                </div>
+                <div class="promotion">                                        
+                    <img class="promotion-icon" src="https://cdn.dsmcdn.com/web/production/campaign-product-promotion-icon.svg" style="height: 30px; width: 30px; margin: 0px;" alt="icon">
+                    Çok al az öde
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty951/product/media/images/20230616/10/386099126/268721489/1/1_org.jpg">
+                <p><strong>Strawberry</strong> DÜĞMELİ PİJAMA TAKIM</p>
+                <h6>175,07 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div>
+                        <img src="https://cdn.dsmcdn.com/indexing-sticker-stamp/moon/7a378884-8b30-488a-9a17-f4914f205f17.png" style="width:60px; height: 60px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img "
+                    src="https://cdn.dsmcdn.com/ty1089/product/media/images/prod/SPM/PIM/20231215/09/12950ec0-0d83-35c8-baee-be49d259edd7/1_org.jpg">
+                <p><strong>Bargello</strong> 134 Kadın 50 ml Parfüm Edp Orıental</p>
+                <div class="low-price">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"/>
+                      </svg>
+                    <span> Son 30 Günün En Düşük Fiyatı!</span>
+                </div>
+                <h6><strike>230 TL</strike> 149,90 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div>
+                        <img src="https://cdn.dsmcdn.com//marketing/datascience/automation/2020/12/9/EnCokSatan_202012091129.png" style="height: 60px; width: 60px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img "
+                    src="https://cdn.dsmcdn.com/ty982/product/media/images/20230808/19/401323388/61114297/1/1_org.jpg">
+                <p><strong>Bargello</strong> Kadın Parfüm 134 Oriental 50 ml Edp</p>
+                <div class="low-price">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"/>
+                      </svg>
+                    <span> Son 30 Günün En Düşük Fiyatı!</span>
+                </div>
+                <h6><strike>230 TL</strike> 149,90 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div>
+                        <img src="https://cdn.dsmcdn.com/indexing-sticker-stamp/moon/7a378884-8b30-488a-9a17-f4914f205f17.png" style="width:60px; height: 60px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVANTAJLI ÜRÜNLER -->
+    <section class="container-cok-satanlar">
+        <h3>Avantajlı Ürünler</h3>
+        <div class="cards">
+
+            <div class="card">
+                <img class="product-img" src="https://cdn.dsmcdn.com/ty937/product/media/images/20230603/1/379170833/504734244/1/1_org.jpg">
+                <p><strong>rise and shine</strong> Antiperspirant Whitening Roll-on - 75 ml </p>
+                <h6>185 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>             
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                </div>
+                <div class="promotion">                                        
+                    <img class="promotion-icon" src="https://cdn.dsmcdn.com/web/production/campaign-product-promotion-icon.svg" style="height: 30px; width: 30px; margin: 0px;" alt="icon">
+                    Çok al az öde
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty1046/product/media/images/prod/SPM/PIM/20231115/17/6ae35201-a30e-3ebc-862e-d0e652cd987b/1_org.jpg">
+                <p><strong>ÖZDEN ÖZDOĞAN</strong> Clean Plus+ Çok Amaçlı Ultra Güçlü Leke Çıkarıcı 750 ml </p>
+                <div class="low-price">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-down-arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"/>
+                      </svg>
+                    <span> Son 30 Günün En Düşük Fiyatı!</span>
+                </div>
+                <h6><strike>159,99 TL</strike> 157 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div class="en-cok-satan">
+                        <img src="https://cdn.dsmcdn.com//marketing/datascience/automation/2020/12/9/EnCokSatan_202012091129.png" style="height: 60px; width: 60px;">
+                    </div>
+                </div>
+                <div class="promotion">                                        
+                    <img class="promotion-icon" src="https://cdn.dsmcdn.com/web/production/campaign-product-promotion-icon.svg" style="height: 30px; width: 30px; margin: 0px;" alt="icon">
+                    Çok al az öde
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty1136/product/media/images/prod/SPM/PIM/20240115/18/16a03cfb-5616-3fb5-9187-6c87658744f5/1_org.jpg">
+                <p><strong>WIWIFY</strong> Su Bazlı Yoğun Nemlendirici Yüz Kremi 100 ml Tüm Cilt Tipleri 24 Saat Etkili </p>
+                <h6>189,90 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div>
+                        <img src="https://cdn.dsmcdn.com/mnresize/250/250/indexing-sticker-stamp/moon/6b090e50-3660-459b-8dd6-8509f979066f.png" style="width: 60px; height: 60px;">
+                    </div>
+                </div>
+                <div class="promotion">                                        
+                    <img class="promotion-icon" src="https://cdn.dsmcdn.com/web/production/campaign-product-promotion-icon.svg" style="height: 30px; width: 30px; margin: 0px;" alt="icon">
+                    3 al 2 öde
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                    src="https://cdn.dsmcdn.com/ty782/product/media/images/20230316/11/304587218/83593672/1/1_org.jpg">
+                <p><strong>Kiperin Collagen</strong> %100 Saf Ve Doğal Yüksek Biyoaktif Çift Hidrolize Kolajen Peptitler içeren Diyet Takviyesi(50günlük)</p>
+                <h6>699,90 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="hizli-teslimat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+                        <div>HIZLI <br>TESLİMAT</div>
+                    </div>
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                    <div>
+                        <img src="https://cdn.dsmcdn.com/mnresize/250/250/indexing-sticker-stamp/moon/6b090e50-3660-459b-8dd6-8509f979066f.png" style="width: 60px; height: 60px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="product-img "
+                    src="https://cdn.dsmcdn.com/ty1018/product/media/images/prod/PIM/20231020/08/cc739ec1-7289-4f92-ae7f-55304800bb91/1_org.jpg">
+                <p><strong>New Well</strong> Besleyici SPF Korumalı Cilt Beyazlatıcı Krem 50ML</p>
+                <h6> 245 TL</h6>
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </div>
+                <div class="teslimat">
+                    <div class="kargo-bedava">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                          </svg>
+                        <div>KARGO <br>BEDAVA</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- MAĞAZA KARTLARI -->
+    <section class="container-store">
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1138/pimWidgetApi/mobile_20240118102016_2472567KadinMobile202401181201.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1137/pimWidgetApi/mobile_20240119120823_2476490ElektronikMobile202401191401.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1129/pimWidgetApi/mobile_20240111153218_2249025KadinMobile202401111801.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1142/pimWidgetApi/mobile_20240119151710_2476531ElektronikMobile202401191801.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1137/pimWidgetApi/mobile_20240116182626_2358947KadinMobile202401161701.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1079/pimWidgetApi/mobile_20231206071632_GetAttachmentThumbnail3.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1116/pimWidgetApi/mobile_20240102151513_2414848EvYasamMobile202401021803.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1119/pimWidgetApi/mobile_20240104073144_2309123KadinMobile202401031602.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1117/pimWidgetApi/mobile_20240102065036_2401147KadinMobile202312291501.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+        <div class="row-store">
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1111/pimWidgetApi/mobile_20231229102239_2358963KadinMobile202312291205.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1120/pimWidgetApi/mobile_20240105130028_2414392ElektronikMobile202401041901.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+            <div class="card-store">
+                <img src="https://cdn.dsmcdn.com/ty1139/pimWidgetApi/mobile_20240117100918_011624superligtsgsderbi12.jpg"
+                    alt="img">
+                <div>Alışverişe Başla > </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <hr>
+    <section class="description">
+        <div class="container-description">
+            <div class="row-description">
+                <h3>Kadınlara Özel Yeni Ürünler Uygun Fiyatlarla Trendyol’da!</h3>
+                <p>Üretilen giyim parçalar sayesinde şık ve göz alıcı bir tarza sahip olmak mümkündür.
+                    Kadın elbise modelleri birbirinden şık tasarımlarıyla ön plana çıkarlar. Sezonun trend renkleri
+                    kullanılarak tasarlanan
+                    elbise çeşitleri farklı kombin seçenekleri sunar. Sade, çiçekli, uzun, mini, çok renkli, fırfırlı,
+                    düğmeli,
+                    şifon ve örme tasarımlara imza atılır. Kadın tesettür elbise başlığı altında ayrı bir ürün grubu
+                    oluşturulur.
+                    Ölçülü giyinmek isteyen kitleye hitap edilir. Tesettür elbise modelleri geniş bir yelpaze oluştur.
+                    Hazırlanan parçalar farklı kombinlerde rahatlıkla kullanılır. Tesettür abiye modelleri şık görünmek
+                    istenilen zamanların
+                    öncelikli tercihi olur. Klasik giyim tarzı için topuklu ayakkabı tercih edilir. Rahatlığından ödün
+                    vermek istemeyenler
+                    ise seçimlerini sneaker modlelerinden yana kullanırlar. Kadın kot pantolon modelleri arasında yüksek
+                    bel, bol paça,
+                    yırtmaçlı, açık mavi, düğme detaylı ve kargo cepli tasarımlar dikkat çeker. Yazın sneaker ile
+                    kombinlenen bu parçalar,
+                    kışın da kadın bot modelleri ile tercih edilebilir. Kadın spor ayakkabı ile yaz ve kış stilinizi
+                    rahatlıkla oluşturabilirsiniz.
+                </p>
+            </div>
+            <div class="row-description">
+                <h5>Şık ve Kaliteli Kadın Sweatshirt Modelleri</h5>
+                <p>Kadın sweatshirt modeli şık ve rahat olmasıyla her mevsim kombinleri tamamlar. Ürünler kapüşonlu,
+                    fermuarlı, örme, yırtmaç detaylı,
+                    dijital baskılı modeller de bisiklet yaka, dik yaka ve yüksek yaka tasarımlarıyla öne çıkar. Kadın
+                    kazak modelleri ile klasik ve
+                    spor tarzınızı tamamlayabilirsiniz. Üst giyim parçaları kadın pantolon tasarımlarıyla bir araya
+                    getirilir. Yapılan kombinler
+                    mevsimlere göre değişiklik gösterir. Yaz koleksiyonunun önemli parçasını oluşturan kadın tişört
+                    çeşitleri V yaka, bisiklet yaka,
+                    yuvarlak yaka ve dik yaka modelleriyle beğeni toplar. Mevcut tasarımlar sade ve renkli çizgilerin
+                    yanı sıra boyfriend baskılı,
+                    yırtmaçlı, örme, anne kız kombini, fırfır detaylı ve kolsuz olarak da gruplandırılır. Bol kesim,
+                    boyfriend, koşu tişörtü,
+                    desenli ve sportif modeller günlük giyim için tercih edilir. Özel davetlerde kullanılmak üzere satın
+                    alınan parçalar kadın
+                    ceket seçenekleriyle kombinlenir. Ceketleri kadın bluz modellerinde de tamamlayıcı unsur olarak
+                    kullanabilirsiniz.
+                    Dilerseniz de kadın gömlek çeşitlerinden birini seçerek klasik bir hava yakalayabilirsiniz.
+                </p>
+            </div>
+            <div class="row-description">
+                <h5>Göz Alıcı Kadın Saat Seçenekleri</h5>
+                <p>Kıyafetlerin tamamlayıcı unsuru kadın saat modelleri kordon materyaline, kordon rengine, kasa
+                    rengine, kasa çapına, kasa materyaline,
+                    su geçirmezlik özelliğine ve kadran şekline göre değişiklik gösterir. Kadın kolye çeşitleri de
+                    kıyafetleri şık gösteren aksesuarların
+                    başında gelir. Bijuteri, gümüş, çelik, altın, inci ve pırlanta modeller hem günlük hem de özel
+                    zamanlarda yapılan kombinleri tamamlar.
+                    Etkileyici tasarıma sahip kadın çanta modellerini de kıyafetleriniz ile uyumlu şekilde
+                    kullanabilirsiniz. Kullanım yerine göre omuz
+                    çantasından el çantasına, sırt çantasında spor çantaya kadar pek çok farklı modeli renk
+                    seçenekleriyle bulabilirsiniz. Yaz aylarının
+                    olmazsa olmaz aksesuarı ise kadın gözlük seçenekleridir. Ürünler güneş ışınlarının zararlı
+                    etkisinden korunmaya destek olurlar.
+                    Model seçiminde cam rengi, çerçeve formu, çerçeve rengi, materyal, çerçeve tipi, cam tipi ve fiyat
+                    belirleyici rol oynayan kriterlerdir.
+                    Hem aksesuar hem de kadın giyim parçalarını Trendyol indirimlerinden faydalanarak satın
+                    alabilirsiniz.
+                </p>
+            </div>
+            <div class="row-description">
+                <h5>Beğenilen Büyük Beden Kadın Ürünleri</h5>
+                <p>Büyük beden kadın giyimi farklı ürün çeşitlerini bünyesinde barındırır. Elbiseden eteğe, bluzdan
+                    tişörte kadar pek farklı alternatif
+                    bulunur. Öne çıkan kadın hırka modelleri kış ayları için birer kurtarıcı görevi görür. Markaların
+                    ürün çeşitlerinde fermuarlı,
+                    cep detaylı, mevsimlik, örme kumaş, desenli, renkli ve sade tasarıma yer verilir. Kadın kaban
+                    çeşitleri kapitoneli, taş detaylı,
+                    kürk görünümlü, dökümlü, kemerli, ve düğmeli kruvaze örme modelleri ile kış aylarında kombinlerin
+                    tamamlayıcısıdır.
+                    Kadın mont modelleri mevsimine uygun su ve rüzgar geçirmez özelliklere sahiptir. Trençkot tasarımı
+                    ise genellikle mevsim
+                    geçişlerinde kullanılmak üzere satın alınır. Dış giyim parçalarının yanı sıra ev giyim parçaları da
+                    ilgiyle takip edilir.
+                    Kadın pijama takımı puantiyeli, fırfırlı, dantel işlemeli, düğmeli, baskılı modelleriyle ön plana
+                    çıkar. Üretim aşamasında
+                    farklı kumaş ve kalıp tercihleri yapılır. Ürünlerin ortak özellikleri ise sahip oldukları
+                    rahatlıktır. Kadın gecelik
+                    modelleri de rahat kumaş yapısı ve şık tasarımıyla müşterilerin beğenisini kazanır.
+                    Sade tasarımlar yanı sıra fırfırlı, nakışlı, işlemeli modeller de tercih edilebilir.
+                </p>
+            </div>
+            <div class="row-description">
+                <h5>En Yeni Ürünlerle İlginizi Çekebilecek Kategoriler</h5>                                   
+                <p>
+                    <a href="#">Spor Ayakkabı</a> |
+                    <a href="#"> Ferace</a> |
+                    <a href="#"> Tesettür Takım</a> |
+                    <a href="#">Etek</a> |
+                    <a href="#">Tesettür Tunik</a> |
+                    <a href="#">Çanta</a> |
+                    <a href="#">Uzun Elbise</a> |
+                    <a href="#">Sırt Çantası</a> |
+                    <a href="#">Toparlayıcı Sütyen</a> |
+                    <a href="#">Tesettür Etek</a> |
+                    <a href="#">Tesettür Mont</a> |
+                    <a href="#">Deri Etek</a> |
+                    <a href="#">Terlik</a> |
+                    <a href="#">Kot Etek</a> |
+                    <a href="#">Tesettür Hırka</a> |
+                    <a href="#">Korse Tayt</a> |
+                    <a href="#">Saten Etek</a> |
+                    <a href="#">Mini Abiye</a> |
+                    <a href="#">Tesettür Yelek</a> |
+                    <a href="#">Dekolteli Elbise</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="populer">
+        <div class="container-populer">
+            <div class="row-populer">
+                <div class="col-populer-brands">
+
+                    <h4>Popüler Marka ve Mağazalar</h4>
+                    <div>
+                        <ul>
+                            <li>Penti</li>
+                            <li>Watsons</li>
+                            <li>Stradivarius</li>
+                            <li>Columbia</li>
+                            <li>Puma</li>
+                        </ul>
+                        <ul>
+                            <li>Mango</li>
+                            <li>English Home</li>
+                            <li>The North Face</li>
+                            <li>Samsung</li>
+                            <li>Mudo</li>
+                        </ul>
+                        <ul>
+                            <li>Vivense</li>
+                            <li>Berskha</li>
+                            <li>Beymen</li>
+                            <li>Lumberjack</li>
+                            <li>Derimod</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-populer-pages">
+                    <h4>Popüler Sayfalar</h4>
+                    <div>
+                        <ul>
+                            <li>Penti</li>
+                            <li>Watsons</li>
+                            <li>Stradivarius</li>
+                            <li>Columbia</li>
+                            <li>Puma</li>
+                        </ul>
+                        <ul>
+                            <li>Mango</li>
+                            <li>English Home</li>
+                            <li>The North Face</li>
+                            <li>Samsung</li>
+                            <li>Mudo</li>
+                        </ul>
+                        <ul>
+                            <li>Vivense</li>
+                            <li>Berskha</li>
+                            <li>Beymen</li>
+                            <li>Lumberjack</li>
+                            <li>Derimod</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row-footer">
+            <div class="col-footer">
+                <h3>Trendyol</h3>
+                <ul>
+                    <li>Biz kimiz</li>
+                    <li>Kariyer</li>
+                    <li>İletişim</li>
+                    <li>Trendyol'da satış yap</li>
+                    <li>Güvenli Alışveriş</li>
+                    <li><img src="images/cards.png" alt="img"></li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <h3>About Us</h3>
+                <ul>
+                    <li>Who we are</li>
+                    <li>Careers</li>
+                    <li>Contact us</li>
+                    <li>Sustainability</li>
+                    <li>Mobil Uygulamalar</li>
+                    <li>
+                        <a href="https://itunes.apple.com/tr/app/trendyol.com/id524362642" target="_blank"><img src="images/app-store.png" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=trendyol.com" target="_blank"><img src="images/google-play.png" alt=""></a>
+                        <a href="https://appgallery.cloud.huawei.com/ag/n/app/C101645013?source=appshare&subsource=C101645013" target="_blank"><img src="images/app-galery.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <h3>Kampanyalar</h3>
+                <ul>
+                    <li>Aktif Kampanyalar</li>
+                    <li>Elite Üyelik</li>
+                    <li>Hediye Fikirleri</li>
+                    <li>Trendyol Fırsatları</li>
+                    <li>Sosyal Medya</li>
+                    <li class="social-media-icons">
+                        <div>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" style="font-weight: bolder;"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-footer">
+                <h3>Yardım</h3>
+                <ul>
+                    <li>Sıkça Sorulan Sorular</li>
+                    <li>Canlı Yardım</li>
+                    <li>Nasıl İade Edebilirim</li>
+                    <li>İşlem Rehberi</li>
+                    <li><button>Ülke Değiştir</button></li>
+                    <li><img src="images/karekod.png" alt="img"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer2">
+        <div class="row-footer2">
+            <span>©2024 DSM Grup Danışmanlık İletişim ve Satış Tic.A.Ş.-Her Hakkı Saklıdır.</span>
+            <span>
+                <span>Çerez Tercihleri</span>
+                <span>KVK ve Gizlilik Politikası</span>
+                <span>DSM Grup</span>
+                <span>Kullanım Koşulları</span>
+            </span>
+        </div>
+    </footer>
+
+
+    <a type="button" href="#top" class="btn-yukari"><i class="fa-solid fa-arrow-up"></i>  Yukarı Çık</a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
